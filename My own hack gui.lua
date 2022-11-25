@@ -20,10 +20,6 @@ MainSection:NewToggle("A lot of health", "Gives you 1 billion health", function(
     end
 end)
 
-MainSection:NewButton("Infinite Yield", "Click for a small box on the corner of your screen that you can type commands in", function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
-end)
-
 
 --LOCAL PLAYER
 local Player = Window:NewTab("Player")
@@ -44,7 +40,7 @@ end)
 
 
 -- OTHER
-local Other = Window:NewTab("Player")
+local Other = Window:NewTab("Other")
 local OtherSection = Other:NewSection("Other")
 
 OtherSection:NewButton("Chat Troller", "You troll the chat by pretending to be someone else and typing a random message in chat", function()
